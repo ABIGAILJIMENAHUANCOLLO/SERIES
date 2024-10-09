@@ -1,0 +1,26 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    int N;
+
+    cout << "Ingrese el valor de N: ";
+    cin >> N;
+
+    cout << "Los primeros " << N << " números de la serie son: ";
+    int num = 1;
+    int count = 0;
+    for (int i = 1; i <= N; i++) {
+        if (count == 2) {
+            count = 0;
+            num++;  // Skip to the next number after the pair
+        }
+        cout << num << " ";
+        num++;
+        count++;
+    }
+    cout << endl;
+
+    return 0;
+}
