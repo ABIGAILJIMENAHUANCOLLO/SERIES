@@ -1,0 +1,20 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    int N;
+
+    cout << "Ingrese el valor de N: ";
+    cin >> N;
+
+    cout << "Los primeros " << N << " números de la serie son: ";
+    int num = 100;
+    for (int i = 1; i <= N; i++) {
+        cout << num << " ";
+        num -= (i * 2); 
+    }
+    cout << endl;
+
+    return 0;
+}
