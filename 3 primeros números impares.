@@ -1,0 +1,18 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    int N;
+
+    cout << "Ingrese el valor de N: ";
+    cin >> N;
+
+    cout << "Los primeros " << N << " números impares son: ";
+    for (int i = 1; i <= 2 * N; i += 2) {
+        cout << i << " ";
+    }
+    cout << endl;
+
+    return 0;
+}
